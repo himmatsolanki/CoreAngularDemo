@@ -1,0 +1,11 @@
+<body>
+  <app-nav-menu></app-nav-menu>
+  <div class="container">
+    <div>
+      CLINET SIDE ENV : {{ client_env_name }} <br />
+      SERVER SIDE ENV : {{ server_env_name || "(Yet to come from server)" }}
+    </div>
+    <div><b>Watching the changes in {{ client_env_name }} version</b></div>
+    <router-outlet></router-outlet>
+  </div>
+</body>
